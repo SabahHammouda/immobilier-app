@@ -1,19 +1,27 @@
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.time.LocalDateTime;
 
 public class RendezVous {
-    private String bienImmobilier;
-    private String agentImmobilier;
-    private String client;
-    private Date date;
-    private String commentaire;
+    private LocalDateTime date;
+    private BienImmobilier bienImmobilier;
+    private Client client;
 
-    public RendezVous(String bienImmobilier, String agentImmobilier, String client, Date date, String commentaire) {
-        this.bienImmobilier = bienImmobilier;
-        this.agentImmobilier = agentImmobilier;
-        this.client = client;
+    public RendezVous(Date date, BienImmobilier bienImmobilier, Client client) {
         this.date = date;
-        this.commentaire = commentaire;
+        this.bienImmobilier = bienImmobilier;
+        this.client = client;
     }
+
+      public LocalDateTime getDate() {
+        return date;
+    }
+      
+    public BienImmobilier getBienImmobilier() {
+        return bienImmobilier;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    // Méthodes supplémentaires peuvent être ajoutées selon les besoins
 }
