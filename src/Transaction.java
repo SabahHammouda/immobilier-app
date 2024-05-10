@@ -19,6 +19,54 @@ public class Transaction {
         this.paiements = new ArrayList<>();
     }
 
+     public String getType() {
+        return type;
+    }
+    
+    public String getBienImmobilier() {
+        return bienImmobilier;
+    }
+
+    public String getClient() {
+        return client;
+    }
+
+    public Date getDateTransaction() {
+        return dateTransaction;
+    }
+
+    public double getMontant() {
+        return montant;
+    }
+
+    public List<Paiement> getPaiements() {
+        return paiements;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setBienImmobilier(String bienImmobilier) {
+        this.bienImmobilier = bienImmobilier;
+    }
+
+    public void setClient(String client) {
+        this.client = client;
+    }
+
+    public void setDateTransaction(Date dateTransaction) {
+        this.dateTransaction = dateTransaction;
+    }
+
+    public void setMontant(double montant) {
+        this.montant = montant;
+    }
+
+    public void setPaiements(List<Paiement> paiements) {
+        this.paiements = paiements;
+    }
+     
     public void enregistrerPaiement(double montant, Date date) {
         paiements.add(new Paiement(montant, date));
     }

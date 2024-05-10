@@ -8,4 +8,21 @@ public class Paiement {
         this.montant = montant;
         this.date = date;
     }
+
+    public double getMontant() {
+        return montant;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setMontant(double montant) {
+        this.montant = montant;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+    
 }

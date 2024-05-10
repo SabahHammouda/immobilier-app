@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class BienImmobilier {
-    
     private String type;
     private double taille;
     private double prix;
@@ -65,9 +61,4 @@ public class BienImmobilier {
     public void setAgent(AgentImmobilier agent) {
         this.agent = agent;
     }
-
-    
-
-    
-
 }

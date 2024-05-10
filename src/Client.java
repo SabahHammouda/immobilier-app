@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class Client {
     private String nom;
+     private String prenom;
     private String type; // Acheteur, locataire, vendeur, bailleur
     private Map<String, String> informations; // Informations supplémentaires sur le client
     private List<String> historiqueInteractions;
@@ -15,6 +16,46 @@ public class Client {
         this.type = type;
         this.informations = new HashMap<>();
         this.historiqueInteractions = new ArrayList<>();
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Map<String, String> getInformations() {
+        return informations;
+    }
+
+    public List<String> getHistoriqueInteractions() {
+        return historiqueInteractions;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setInformations(Map<String, String> informations) {
+        this.informations = informations;
+    }
+
+    public void setHistoriqueInteractions(List<String> historiqueInteractions) {
+        this.historiqueInteractions = historiqueInteractions;
     }
 
     public void ajouterInformation(String cle, String valeur) {
