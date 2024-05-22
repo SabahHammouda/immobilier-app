@@ -6,13 +6,11 @@ public class RendezVous {
     private String client;
     private LocalDateTime date;
     private String commentaire;
+    public  String type ;
 
-    public RendezVous(String bienImmobilier, String agentImmobilier, String client, LocalDateTime date, String commentaire) {
-        this.bienImmobilier = bienImmobilier;
-        this.agentImmobilier = agentImmobilier;
-        this.client = client;
-        this.date = date;
-        this.commentaire = commentaire;
+    public RendezVous(String  type) {
+        this.type= type;
+        
     }
 
     // Getters et setters pour tous les attributs

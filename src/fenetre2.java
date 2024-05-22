@@ -69,6 +69,7 @@ public class fenetre2 extends javax.swing.JFrame {
             }
         });
 
+        jList1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "" };
             public int getSize() { return strings.length; }
