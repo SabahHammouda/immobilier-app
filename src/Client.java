@@ -52,7 +52,7 @@ public class Client {
 
     @Override
     public String toString() {
-     String affichage = "le nom de client est "+getNom()+" de prenom "+getPrenom()+" et l'adresse "+getAdresse()+" de type "+getType();
+     String affichage = "le nom de client est "+getNom()+" de prenom "+getPrenom()+" et l'adresse "+getAdresse()+" de type "+ " (" +getType() + ")";
         return affichage;
     }
     

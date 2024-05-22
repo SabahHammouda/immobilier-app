@@ -75,6 +75,11 @@ public class fenetre extends javax.swing.JFrame {
         jButton5.setForeground(new java.awt.Color(0, 102, 102));
         jButton5.setText("BIENS");
         jButton5.setOpaque(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 51));
@@ -130,6 +135,13 @@ public class fenetre extends javax.swing.JFrame {
       int choix = JOptionPane.showConfirmDialog(this,"Etes-vous sur de vouloir sortir?", "Confirmation", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
       if(choix==0)System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+ // TODO add your handling code here:
+        fenetre2  fn2 = new fenetre2();
+         fn2.show();
+         dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

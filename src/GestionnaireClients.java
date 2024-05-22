@@ -16,24 +16,10 @@ public class GestionnaireClients {
         informations.put("nom", nom);
         informations.put("adresse", adresse);
         informations.put("telephone", telephone);
-        clients.add(new Client(informations));
+ 
     }
 
-    public void modifierTypeClient(Client client, String nouveauType) {
-        client.setType(nouveauType);
-    }
-
-    public void modifierNomClient(Client client, String nouveauNom) {
-        client.getInformations().put("nom", nouveauNom);
-    }
-
-    public void modifierAdresseClient(Client client, String nouvelleAdresse) {
-        client.getInformations().put("adresse", nouvelleAdresse);
-    }
-
-    public void modifierTelephoneClient(Client client, String nouveauTelephone) {
-        client.getInformations().put("telephone", nouveauTelephone);
-    }
+   
 
     public void supprimerClient(String nom) {
         Client clientASupprimer = null;

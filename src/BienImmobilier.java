@@ -1,17 +1,16 @@
 public class BienImmobilier {
     private String type;
-    private double taille;
-    private double prix;
+    private String taille;
+    private String prix;
     private String localisation;
-    private String description;
-    private AgentImmobilier agent;
+     
 
-    public BienImmobilier(String type, double taille, double prix, String localisation, String description) {
+    public BienImmobilier(String type, String taille, String prix,String localisation  ) {
         this.type = type;
         this.taille = taille;
         this.prix = prix;
         this.localisation = localisation;
-        this.description = description;
+         
     }
 
     public String getType() {
@@ -22,19 +21,20 @@ public class BienImmobilier {
         this.type = type;
     }
 
-    public double getTaille() {
+    public String getTaille() {
         return taille;
     }
 
-    public void setTaille(double taille) {
+    public void setTaille(String taille) {
         this.taille = taille;
     }
 
-    public double getPrix() {
+    public String getPrix() {
         return prix;
     }
 
-    public void setPrix(double prix) {
+    
+    public void setPrix(String prix) {
         this.prix = prix;
     }
 
@@ -45,20 +45,11 @@ public class BienImmobilier {
     public void setLocalisation(String localisation) {
         this.localisation = localisation;
     }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public AgentImmobilier getAgent() {
-        return agent;
-    }
-
-    public void setAgent(AgentImmobilier agent) {
-        this.agent = agent;
-    }
+    @Override
+    public String toString()  {
+       String affichage = "le Bien est de type :"+getType()+ " "+"sa taille est :"
+               +getTaille()+" "+ "son Prix est : "+getPrix()+" "+ "et sa localisation est :" + getLocalisation();
+        return affichage ;
+     
+     }
 }
